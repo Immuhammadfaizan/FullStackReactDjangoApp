@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
-  "build": "vite build --outDir=dist", 
+  "build": "react-scripts build",
   "lint": "eslint .",
   "preview": "vite preview"
 },

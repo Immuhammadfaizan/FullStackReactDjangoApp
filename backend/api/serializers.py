@@ -6,7 +6,7 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'password']
-        extra_kwrags = {"password": {"write_only": True}}
+        extra_kwargs = {"password": {"write_only": True}}
         
     def create(self, validated_data):
         # Unpack the validated data and pass it as keyword arguments to the User model's create method
